@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1 TH2</title>
+    <link rel="stylesheet" type="text/css" href="Bài 1-TH2.css">
+    <script src="Bài 1-TH2.js"></script>
+</head>
+<style>
+    table,th,td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <form>
+        <div class="TH2">
+            <table style="width: 430px;">
+                <tbody>
+                    <tr>
+                        <th>
+                            Lương
+                        </th>
+                        <td>
+                            <input type="text" id="luong">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Hệ số lương
+                        </th>
+                        <td>
+                            <input type="number" id="HSL" min="0" max="10" step="0.1" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="TLT" colspan="2">
+                            <button type="button" onclick="TinhLuong()">
+                                Tính lương tháng
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Lương tháng
+                        </th>
+                        <td id="Ketqua"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
